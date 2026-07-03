@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "مینیمال",
+	"settings": {
+		"color": {
+			"palette": [
+				{ "slug": "background", "color": "#ffffff", "name": "Background" },
+				{ "slug": "foreground", "color": "#000000", "name": "Foreground" },
+				{ "slug": "primary", "color": "#000000", "name": "Primary" },
+				{ "slug": "primary-foreground", "color": "#ffffff", "name": "Primary foreground" },
+				{ "slug": "secondary", "color": "#404040", "name": "Secondary" },
+				{ "slug": "accent", "color": "#737373", "name": "Accent" },
+				{ "slug": "muted", "color": "#fafafa", "name": "Muted" },
+				{ "slug": "muted-foreground", "color": "#737373", "name": "Muted foreground" },
+				{ "slug": "border", "color": "#e5e5e5", "name": "Border" }
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--serif)",
+			"lineHeight": "1.8"
+		},
+		"elements": {
+			"button": {
+				"border": {
+					"radius": "0"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontWeight": "400"
+				}
+			}
+		}
+	}
+}

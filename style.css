@@ -1,0 +1,31 @@
+/*
+Theme Name: StarterPress
+Theme URI: https://github.com/mohammadkhodaei/starterpress
+Author: Mohammad Khodaei
+Author URI: https://github.com/mohammadkhodaei
+Description: یک قالب سبک، مدرن و Full Site Editing برای وردپرس با تمرکز بر کارایی، دسترس‌پذیری، معماری تمیز و توسعه‌پذیری. قالب بلوکی، بدون jQuery، سازگار با RTL، آماده ترجمه و WooCommerce.
+Requires at least: 6.8
+Tested up to: 6.8
+Requires PHP: 8.0
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: starterpress
+Tags: full-site-editing, block-styles, block-patterns, translation-ready, rtl-language-support, accessibility-ready, custom-colors, custom-logo, custom-menu, featured-images, threaded-comments, wide-blocks, sticky-post, e-commerce, one-column, two-columns
+*/
+
+/*
+ * The visual styling for StarterPress lives primarily in theme.json and the
+ * stylesheets under assets/css/. This file only carries the required theme
+ * header for block themes plus a small set of guards that ensure graceful
+ * behaviour while JavaScript loads.
+ */
+
+.no-js .is-menu-toggle-only {
+	display: none;
+}
+
+.skip-link.screen-reader-text {
+	background-color: var(--wp--preset--color--background, #fff);
+	color: var(--wp--preset--color--primary, #1e40af);
+}

@@ -1,0 +1,78 @@
+/**
+ * Minimal WooCommerce overrides for StarterPress.
+ *
+ * Uses theme.json CSS custom properties for consistent branding.
+ */
+
+.woocommerce,
+.woocommerce-page {
+	--wc-primary: var(--wp--preset--color--primary, #1e40af);
+	--wc-secondary: var(--wp--preset--color--secondary, #0ea5e9);
+}
+
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit {
+	background-color: var(--wp--preset--color--primary, #1e40af);
+	border-radius: var(--wp--custom--radius--medium, 0.75rem);
+	color: var(--wp--preset--color--primary-foreground, #fff);
+	font-weight: 600;
+	padding: 0.75rem 1.5rem;
+	transition: background-color 0.2s ease;
+}
+
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce #respond input#submit:hover {
+	background-color: var(--wp--preset--color--secondary, #0ea5e9);
+	color: var(--wp--preset--color--primary-foreground, #fff);
+}
+
+.woocommerce .price,
+.woocommerce ul.products li.product .price {
+	color: var(--wp--preset--color--primary, #1e40af);
+	font-weight: 700;
+}
+
+.woocommerce ul.products li.product {
+	border: 1px solid var(--wp--preset--color--border, #e5e7eb);
+	border-radius: var(--wp--custom--radius--large, 1.25rem);
+	padding: var(--wp--preset--spacing--30, 1rem);
+}
+
+.woocommerce .woocommerce-message,
+.woocommerce .woocommerce-info,
+.woocommerce .woocommerce-error {
+	border-radius: var(--wp--custom--radius--medium, 0.75rem);
+}
+
+.woocommerce table.shop_table {
+	border-radius: var(--wp--custom--radius--medium, 0.75rem);
+	overflow: hidden;
+}
+
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea,
+.woocommerce form .form-row select {
+	border: 1px solid var(--wp--preset--color--border, #e5e7eb);
+	border-radius: var(--wp--custom--radius--small, 0.375rem);
+	padding: 0.625rem 0.875rem;
+}
+
+.woocommerce form .form-row input.input-text:focus,
+.woocommerce form .form-row textarea:focus,
+.woocommerce form .form-row select:focus {
+	border-color: var(--wp--preset--color--primary, #1e40af);
+	outline: 2px solid var(--wp--preset--color--primary, #1e40af);
+	outline-offset: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.woocommerce a.button,
+	.woocommerce button.button,
+	.woocommerce input.button {
+		transition: none;
+	}
+}

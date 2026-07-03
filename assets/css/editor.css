@@ -1,0 +1,32 @@
+/**
+ * StarterPress editor styles.
+ *
+ * Mirrors frontend presentation inside the block editor.
+ */
+
+.editor-styles-wrapper {
+	font-family: 'Vazirmatn', var(--wp--preset--font-family--system, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+	line-height: 1.7;
+	direction: rtl;
+}
+
+.editor-styles-wrapper .is-style-card {
+	border: 1px solid var(--wp--preset--color--border, #e5e7eb);
+	border-radius: var(--wp--custom--radius--large, 1.25rem);
+	box-shadow: var(--wp--preset--shadow--medium, 0 4px 12px -2px rgba(17, 24, 39, 0.12));
+	padding: var(--wp--preset--spacing--40, 1.5rem);
+}
+
+.editor-styles-wrapper .is-style-outline .wp-block-button__link {
+	background: transparent;
+	border: 2px solid var(--wp--preset--color--primary, #1e40af);
+	color: var(--wp--preset--color--primary, #1e40af);
+}
+
+.editor-styles-wrapper .is-style-rounded img {
+	border-radius: var(--wp--custom--radius--large, 1.25rem);
+}
+
+.editor-styles-wrapper .starterpress-pricing-featured {
+	border: 2px solid var(--wp--preset--color--primary, #1e40af);
+}
